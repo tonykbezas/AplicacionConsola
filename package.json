@@ -1,0 +1,23 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "Prueba del parcial",
+  "main": "app.js",
+  "dependencies": {
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykbezas/AplicacionConsola.git"
+  },
+  "author": "Anthony Cabezas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykbezas/AplicacionConsola/issues"
+  },
+  "homepage": "https://github.com/tonykbezas/AplicacionConsola#readme"
+}
