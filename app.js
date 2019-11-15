@@ -1,21 +1,19 @@
 const {argv} = require('./config/yargs.js')
 
-const{publicar,guardar} = require('./archivos/metodos.js');
+const{mostrar,guardar} = require('./buscador/buscar.js');
 
 let comando = argv._[0]
 console.log(comando)
 switch(comando){
-    case 'publicar':
-        publicar(argv.file,argv.country,argv.year)
-            .then(console.log(argv.year,argv.country,argv.file))
+    case 'mostrar':
+        mostrar(argv.archivo,argv.pais,argv.anio)
+            .then(console.log(argv.archivo,argv.pais,argv.anio))
             .catch(e => console.log(e));
-        console.log(module);
         break;
     case 'guardar':
-        guardar(argv.file,argv.country,argv.year,argv.out)
+        guardar(argv.archivo,argv.pais,argv.anio)
             .then(console.log('Listado'))
             .catch(e => console.log(e));
-        console.log(module);
         break;
     default:
         console.log('Comando no valido!')

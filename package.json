@@ -4,6 +4,7 @@
   "description": "Prueba del parcial",
   "main": "app.js",
   "dependencies": {
+    "csv-parser": "^2.3.2",
     "yargs": "^14.2.0"
   },
   "devDependencies": {},
